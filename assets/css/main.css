@@ -1,0 +1,89 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+@font-face {
+  font-family: Rubik;
+  src: url("./../fonts/Rubik/Rubik-Medium.ttf");
+}
+
+header {
+  height: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: fixed;
+  width: 100%;
+}
+
+header .logo {
+  margin-left: 50px;
+}
+
+header .logo img {
+  height: 50px;
+}
+
+header nav {
+  margin-left: auto;
+  margin-right: 80px;
+  font-family: Rubik;
+  font-size: 1em;
+}
+
+header nav ul {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  line-height: 50px;
+}
+
+header nav ul li {
+  margin-left: 40px;
+}
+
+header nav ul li.rsvp a {
+  background: #7db660;
+  padding: 8px 20px;
+  border-radius: 5px;
+  color: white;
+}
+
+header nav ul li a {
+  text-decoration: none;
+  color: black;
+}
+
+.backgroud {
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  z-index: -5;
+}
+
+.main-content {
+  padding-top: 150px;
+}
+
+.main-content div {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 0 auto;
+}
+
+.main-content .button {
+  background: red;
+  padding: 15px 45px;
+  border: 1px solid black;
+}
+
+.main-content .button a {
+  text-decoration: none;
+  color: white;
+}
+/*# sourceMappingURL=main.css.map */

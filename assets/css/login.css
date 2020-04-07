@@ -1,0 +1,126 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+@font-face {
+  font-family: Baloo;
+  src: url("/assets/Baloo_Da_2/BalooDa2-Medium.ttf");
+}
+
+@font-face {
+  font-family: Rubik;
+  src: url("/assets/fonts/Rubik/Rubik-Medium.ttf");
+}
+
+body .background {
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+body .background.blur {
+  filter: blur(3px);
+  -webkit-filter: blur(3px);
+}
+
+body .content {
+  height: 100vh;
+  text-align: center;
+  padding-top: 100px;
+  font-family: Baloo;
+}
+
+body .content .logo img {
+  width: 300px;
+}
+
+body .content .form form {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 0 auto;
+}
+
+body .content .form form .form-field.checkbox {
+  text-align: left;
+  line-height: 0px;
+}
+
+body .content .form form .form-field.checkbox .remember {
+  position: relative;
+  bottom: 16px;
+  left: 5px;
+  color: white;
+  font-family: Baloo;
+  font-size: 0.9em;
+}
+
+body .content .form form .form-field.warning {
+  color: #d66872;
+  text-align: left;
+  font-family: Rubik;
+  font-size: 0.9em;
+  display: none;
+}
+
+body .content .form form .form-field input {
+  border-radius: 2px;
+  border: 0;
+  background: #fff;
+  font-size: 100%;
+  font-weight: 700;
+  height: 40px;
+  text-align: center;
+  color: #333;
+  line-height: 25px;
+  padding: 5px 10px;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  margin-bottom: 10px;
+  width: 280px;
+  font-size: 0.9em;
+}
+
+body .content .form form .form-field input[type="submit"] {
+  background: #7db660;
+  color: white;
+  font-weight: 100;
+  font-size: 0.8em;
+  cursor: pointer;
+}
+
+body .content .form form .form-field input[type="checkbox"] {
+  width: 13px;
+  cursor: pointer;
+}
+
+body .content .footer {
+  position: absolute;
+  bottom: 15px;
+  width: 100%;
+  color: white;
+  font-size: 0.75em;
+  font-family: Rubik;
+}
+
+body .content .footer .secret {
+  font-family: Rubik;
+  padding-bottom: 20px;
+  font-size: 1.1em;
+}
+
+body .content .footer a, body .content .footer a:active, body .content .footer a:visited, body .content .footer a:hover {
+  color: #7db660;
+  text-decoration: none;
+}
+/*# sourceMappingURL=login.css.map */
