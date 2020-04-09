@@ -1,48 +1,54 @@
-*{
+// Reset defaults
+* {
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
+    a{
+        text-decoration: none;
+        color: black;
+    }
 }
 
-@font-face{
+// variables
+$primary: #7db660;
+
+// importing font
+@font-face {
     font-family: Rubik;
-    src: url('./../fonts/Rubik/Rubik-Medium.ttf');
+    src: url("./../fonts/Rubik/Rubik-Medium.ttf");
 }
 
-@font-face{
+@font-face {
     font-family: Myriad;
-    src: url('./../fonts/myriad-pro-cufonfonts/MYRIADPRO-REGULAR.OTF');
+    src: url("./../fonts/myriad-pro-cufonfonts/MYRIADPRO-REGULAR.OTF");
 }
 
-
-
-header{
+header {
     height: 50px;
     display: flex;
     position: fixed;
     width: 100%;
 
-    .logo{
+    .logo {
         margin-left: 50px;
-        img{
+        img {
             height: 50px;
         }
-
     }
 
-    nav{
+    nav {
         margin-left: auto;
         margin-right: 80px;
         font-family: Myriad;
         font-size: 1em;
-        ul{
+        ul {
             list-style: none;
             display: flex;
             line-height: 50px;
-            li{
+            li {
                 margin-left: 40px;
-                &.rsvp a{
-                    background: #7db660;
+                &.rsvp a {
+                    background: $primary;
                     padding: 8px 20px;
                     border-radius: 5px;
                     color: white;
@@ -50,32 +56,31 @@ header{
                     font-weight: 700;
                     letter-spacing: 1.5px;
                 }
-                a{
+                a {
                     text-decoration: none;
                     color: white;
                 }
             }
         }
     }
-    
 }
 
-.backgroud{
+.backgroud {
     width: 100%;
     height: 100vh;
     position: absolute;
     z-index: -5;
 }
 
-.main-content{
+.main-content {
     padding-top: 150px;
 
-    div{
+    div {
         width: fit-content;
         margin: 0 auto;
     }
 
-    .button{
+    .button {
         border: 2px solid white;
         margin-top: 20px;
         width: 200px;
@@ -83,12 +88,16 @@ header{
         display: flex;
         justify-content: center;
         align-items: center;
-        
+        border-radius: 5px;
+        font-family: Myriad;
+        text-decoration: none;
+        color: white;
+        font-size: 1.2em;
 
-        a{
-            font-family: 'Rubik';
-            text-decoration: none;
-            color: white;
+        &:hover {
+            background: rgb(125, 182, 96);
+            background: radial-gradient(circle, rgba(125, 182, 96, 1) 0%, rgba(121, 171, 95, 1) 100%);
+            border: 2px solid $primary;
         }
     }
 }

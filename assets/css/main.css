@@ -5,6 +5,11 @@
           box-sizing: border-box;
 }
 
+* a {
+  text-decoration: none;
+  color: black;
+}
+
 @font-face {
   font-family: Rubik;
   src: url("./../fonts/Rubik/Rubik-Medium.ttf");
@@ -98,11 +103,16 @@ header nav ul li a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-}
-
-.main-content .button a {
-  font-family: 'Rubik';
+  border-radius: 5px;
+  font-family: Myriad;
   text-decoration: none;
   color: white;
+  font-size: 1.2em;
+}
+
+.main-content .button:hover {
+  background: #7db660;
+  background: radial-gradient(circle, #7db660 0%, #79ab5f 100%);
+  border: 2px solid #7db660;
 }
 /*# sourceMappingURL=main.css.map */
