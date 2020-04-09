@@ -74,12 +74,13 @@ header nav ul li a {
 .backgroud {
   width: 100%;
   height: 100vh;
-  position: absolute;
+  position: fixed;
   z-index: -5;
 }
 
 .main-content {
   padding-top: 150px;
+  height: 100vh;
 }
 
 .main-content div {
@@ -114,5 +115,50 @@ header nav ul li a {
   background: #7db660;
   background: radial-gradient(circle, #7db660 0%, #79ab5f 100%);
   border: 2px solid #7db660;
+}
+
+section {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+section h2 {
+  font-size: 2.5em;
+}
+
+section p {
+  margin-left: 300px;
+  margin-right: 300px;
+  text-align: center;
+  font-size: 1.5em;
+}
+
+section.about {
+  position: relative;
+}
+
+section.about img {
+  position: absolute;
+  bottom: 0px;
+}
+
+section.about img.left-image {
+  left: 0px;
+}
+
+section.about img.right-image {
+  right: 0px;
 }
 /*# sourceMappingURL=main.css.map */

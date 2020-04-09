@@ -68,12 +68,13 @@ header {
 .backgroud {
     width: 100%;
     height: 100vh;
-    position: absolute;
+    position: fixed;
     z-index: -5;
 }
 
 .main-content {
     padding-top: 150px;
+    height: 100vh;
 
     div {
         width: fit-content;
@@ -98,6 +99,45 @@ header {
             background: rgb(125, 182, 96);
             background: radial-gradient(circle, rgba(125, 182, 96, 1) 0%, rgba(121, 171, 95, 1) 100%);
             border: 2px solid $primary;
+        }
+    }
+}
+
+
+section{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    small{
+    }
+
+    h2{
+        font-size: 2.5em;
+    }
+    
+    p{
+        margin-left: 300px;
+        margin-right: 300px;
+        text-align: center;
+        font-size: 1.5em;
+    }
+}
+
+section.about{
+    position: relative;
+    img{
+        position: absolute;
+        bottom: 0px;
+
+        &.left-image{
+            left: 0px;
+        }
+
+        &.right-image{
+            right: 0px;
         }
     }
 }
