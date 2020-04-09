@@ -10,6 +10,10 @@
   color: black;
 }
 
+body {
+  overflow-x: hidden;
+}
+
 @font-face {
   font-family: Rubik;
   src: url("./../fonts/Rubik/Rubik-Medium.ttf");
@@ -27,6 +31,7 @@ header {
   display: flex;
   position: fixed;
   width: 100%;
+  background-color: rgba(255, 255, 255, 0);
 }
 
 header .logo {
@@ -60,7 +65,7 @@ header nav ul li.rsvp a {
   background: #7db660;
   padding: 8px 20px;
   border-radius: 5px;
-  color: white;
+  color: white !important;
   padding-top: 10px;
   font-weight: 700;
   letter-spacing: 1.5px;
@@ -71,16 +76,24 @@ header nav ul li a {
   color: white;
 }
 
+.scrollmagic-pin-spacer {
+  z-index: -4;
+}
+
 .backgroud {
   width: 100%;
   height: 100vh;
-  position: fixed;
+  position: absolute;
   z-index: -5;
+  opacity: 0.1;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 .main-content {
   padding-top: 150px;
   height: 100vh;
+  z-index: 1px;
 }
 
 .main-content div {
@@ -145,20 +158,38 @@ section p {
   font-size: 1.5em;
 }
 
+section.greet {
+  opacity: 1;
+}
+
 section.about {
   position: relative;
+  background: white;
+  background: -webkit-gradient(linear, left bottom, left top, from(white), color-stop(78%, rgba(255, 255, 255, 0.112482)));
+  background: linear-gradient(0deg, white 0%, rgba(255, 255, 255, 0.112482) 78%);
 }
 
 section.about img {
   position: absolute;
   bottom: 0px;
+  opacity: 0;
+  width: 300px;
+  height: 400px;
 }
 
 section.about img.left-image {
   left: 0px;
+  -webkit-transform: translateX(-200px);
+          transform: translateX(-200px);
 }
 
 section.about img.right-image {
   right: 0px;
+  -webkit-transform: translateX(200px);
+          transform: translateX(200px);
+}
+
+section.party {
+  background: #fafafa;
 }
 /*# sourceMappingURL=main.css.map */
