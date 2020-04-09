@@ -10,6 +10,11 @@
   src: url("./../fonts/Rubik/Rubik-Medium.ttf");
 }
 
+@font-face {
+  font-family: Myriad;
+  src: url("./../fonts/myriad-pro-cufonfonts/MYRIADPRO-REGULAR.OTF");
+}
+
 header {
   height: 50px;
   display: -webkit-box;
@@ -30,7 +35,7 @@ header .logo img {
 header nav {
   margin-left: auto;
   margin-right: 80px;
-  font-family: Rubik;
+  font-family: Myriad;
   font-size: 1em;
 }
 
@@ -51,11 +56,14 @@ header nav ul li.rsvp a {
   padding: 8px 20px;
   border-radius: 5px;
   color: white;
+  padding-top: 10px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
 }
 
 header nav ul li a {
   text-decoration: none;
-  color: black;
+  color: white;
 }
 
 .backgroud {
@@ -77,12 +85,23 @@ header nav ul li a {
 }
 
 .main-content .button {
-  background: red;
-  padding: 15px 45px;
-  border: 1px solid black;
+  border: 2px solid white;
+  margin-top: 20px;
+  width: 200px;
+  height: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .main-content .button a {
+  font-family: 'Rubik';
   text-decoration: none;
   color: white;
 }
