@@ -41,7 +41,7 @@ new ScrollMagic.Scene({
 
 
 // Owl Carousel
-$('.owl-carousel').owlCarousel({
+$('.party .owl-carousel').owlCarousel({
     nav: true,
     loop:true,
     margin:10,
@@ -54,6 +54,26 @@ $('.owl-carousel').owlCarousel({
         },
         1000:{
             items:5
+        }
+    },
+    navText: ['<i class="fas fa-chevron-left"></i>', '<i class="fas fa-chevron-right"></i>']
+})
+
+// Image slider
+$('.gallery .owl-carousel').owlCarousel({
+    nav: true,
+    loop:true,
+    margin:20,
+    stagePadding: 200,
+    responsive:{
+        0:{
+            items:1
+        },
+        600:{
+            items:1
+        },
+        1000:{
+            items:1
         }
     },
     navText: ['<i class="fas fa-chevron-left"></i>', '<i class="fas fa-chevron-right"></i>']

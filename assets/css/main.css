@@ -364,4 +364,38 @@ section.rsvp .button.active {
   background-color: #7db660;
   color: white;
 }
+
+section.gallery {
+  width: 100%;
+}
+
+section.gallery .slider .slide {
+  text-align: center;
+  position: relative;
+  z-index: 0;
+}
+
+section.gallery .slider .slide img {
+  height: 600px;
+}
+
+section.gallery .owl-nav {
+  z-index: 1;
+  font-size: 2.5em;
+  color: white;
+}
+
+section.gallery .owl-nav button {
+  position: absolute;
+  top: 50%;
+  text-shadow: 2px 1px 15px rgba(0, 0, 0, 0.2);
+}
+
+section.gallery .owl-nav .owl-prev {
+  left: 10px;
+}
+
+section.gallery .owl-nav .owl-next {
+  right: 10px;
+}
 /*# sourceMappingURL=main.css.map */
