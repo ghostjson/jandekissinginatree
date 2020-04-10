@@ -217,3 +217,72 @@ section.instagram{
         width: 350px;
     }
 }
+
+section.venue{
+
+    margin: auto 220px;
+
+    .schedule{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 50px;
+        
+        .box{
+
+            display: grid;
+            grid-template-columns: 100px auto;
+
+            .icon{
+                border: 1px solid black;
+                width: 60px;
+                height: 60px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                img{
+                    width: 40px;
+                }
+                i{
+                    font-size: 2em;
+                }
+            }
+            .content{
+                
+                h3{
+                    font-size: 1.8em;
+                    margin-bottom: 12px;
+                }
+
+                p{
+                    text-align: left;
+                    margin: 0px;
+                }
+            }
+        }
+    }
+}
+
+
+section.registry{
+    display: grid;
+    grid-template-columns: 40% auto;
+    width: 100%;
+    justify-content: normal;
+    align-items: normal;
+
+    .left-section{
+        padding-top: 200px;
+        padding-left: 100px;
+        p{
+            margin: 0px;
+            text-align: left;
+        }
+    }
+
+    .right-section{
+        text-align: right;
+        img{
+            width: fit-content;
+        }
+    }
+}
