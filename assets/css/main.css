@@ -331,4 +331,37 @@ section.registry .right-section img {
   width: -moz-fit-content;
   width: fit-content;
 }
+
+section.rsvp .content {
+  text-align: center;
+}
+
+section.rsvp .content h2 {
+  margin: 20px auto;
+}
+
+section.rsvp .button {
+  border: 1px solid black;
+  width: 180px;
+  height: 40px;
+  font-size: 1.3em;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 5px;
+  margin-top: 40px;
+  cursor: pointer;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+section.rsvp .button:hover {
+  border: 1px solid #7db660;
+  color: #7db660;
+}
+
+section.rsvp .button.active {
+  border: 1px solid #7db660;
+  background-color: #7db660;
+  color: white;
+}
 /*# sourceMappingURL=main.css.map */

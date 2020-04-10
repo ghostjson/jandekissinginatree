@@ -286,3 +286,38 @@ section.registry{
         }
     }
 }
+
+section.rsvp{
+
+    .content{
+        text-align: center;
+
+        h2{
+            margin: 20px auto;
+        }
+    }
+
+    .button{
+        border: 1px solid black;
+        width: 180px;
+        height: 40px;
+        font-size: 1.3em;
+        text-align: center;
+        line-height: 40px;
+        border-radius: 5px;
+        margin-top: 40px;
+        cursor: pointer;
+        transition: all 0.5s;
+        
+        &:hover{
+            border: 1px solid $primary;
+            color: $primary;
+        }
+
+        &.active{
+            border: 1px solid $primary;
+            background-color: $primary;
+            color: white;
+        }
+    }
+}
