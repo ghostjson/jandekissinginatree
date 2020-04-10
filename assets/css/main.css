@@ -10,6 +10,10 @@
   color: black;
 }
 
+:focus {
+  outline: none;
+}
+
 body {
   overflow-x: hidden;
 }
@@ -191,5 +195,52 @@ section.about img.right-image {
 
 section.party {
   background: #fafafa;
+}
+
+section.party .slider {
+  margin-top: 100px;
+}
+
+section.party .slider .slide {
+  text-align: center;
+  position: relative;
+  z-index: 0;
+}
+
+section.party .slider .slide h3 {
+  padding: 10px;
+}
+
+section.party .slider .slide p {
+  margin: 0 auto;
+  font-size: 1em;
+}
+
+section.party .owl-nav {
+  z-index: 1;
+  font-size: 2.5em;
+  color: white;
+}
+
+section.party .owl-nav button {
+  position: absolute;
+  top: 50%;
+  text-shadow: 2px 1px 15px rgba(0, 0, 0, 0.2);
+}
+
+section.party .owl-nav .owl-prev {
+  left: 10px;
+}
+
+section.party .owl-nav .owl-next {
+  right: 10px;
+}
+
+section.instagram {
+  border-bottom: 1px solid #e2e1e1;
+}
+
+section.instagram img {
+  margin-top: auto;
 }
 /*# sourceMappingURL=main.css.map */

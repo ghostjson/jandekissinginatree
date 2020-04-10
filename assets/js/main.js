@@ -40,3 +40,21 @@ new ScrollMagic.Scene({
 
 
 
+// Owl Carousel
+$('.owl-carousel').owlCarousel({
+    nav: true,
+    loop:true,
+    margin:10,
+    responsive:{
+        0:{
+            items:1
+        },
+        600:{
+            items:3
+        },
+        1000:{
+            items:5
+        }
+    },
+    navText: ['<i class="fas fa-chevron-left"></i>', '<i class="fas fa-chevron-right"></i>']
+})

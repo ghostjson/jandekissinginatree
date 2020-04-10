@@ -9,6 +9,10 @@
     }
 }
 
+:focus{
+    outline: none;
+}
+
 body{
     overflow-x: hidden;
 }
@@ -125,9 +129,6 @@ section{
     align-items: center;
     flex-direction: column;
 
-    small{
-    }
-
     h2{
         font-size: 2.5em;
     }
@@ -170,4 +171,47 @@ section.about{
 
 section.party{
     background: #fafafa;
+
+    .slider{
+        margin-top: 100px;
+        .slide{
+            text-align: center;
+            position: relative;
+            z-index: 0;
+
+            h3{
+                padding: 10px;
+            }
+            
+            p{
+                margin: 0 auto;
+                font-size: 1em;
+            }
+        }
+    }
+
+    .owl-nav{
+        z-index: 1;
+        font-size: 2.5em;
+        color: white;
+        button{
+            position: absolute;
+            top: 50%;
+            text-shadow: 2px 1px 15px rgba(0,0,0,.2);
+        }
+        .owl-prev{
+            left: 10px;
+        }
+        .owl-next{
+            right: 10px;
+        }
+    }
+}
+
+
+section.instagram{
+    border-bottom: 1px solid rgb(226, 225, 225);
+    img{
+        margin-top: auto;
+    }
 }
