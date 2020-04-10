@@ -15,7 +15,9 @@
 
 <body>
 
-
+    <!-- Facebook Comment Plugin -->
+    <div id="fb-root"></div>
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v6.0&appId=2578196759175007&autoLogAppEvents=1"></script>
     <header>
         <div class="logo">
             <img src="./assets/images/logo.png" alt="logo">
@@ -246,10 +248,19 @@
     </section>
 
 
+    <section class="comments">
+        <h3>Comments</h3>
+        <div class="fb-comments" data-href="http://jandekissinginatree.com/" data-width="100%" data-numposts="5"></div>
+    </section>
+
+
+
     <footer>
-        <div class="icon">
-            <i class="fas fa-chevron-up"></i>
-        </div>
+        <a href="#">
+            <div class="icon">
+                <i class="fas fa-chevron-up"></i>
+            </div>
+        </a>
         <p><a href="#">#BeRichinlove2016</a></p>
     </footer>
 
@@ -262,6 +273,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
 
     <script src="./assets/js/owl.carousel.min.js"></script>
+
 
     <script src="./assets/js/main.js"></script>
 </body>

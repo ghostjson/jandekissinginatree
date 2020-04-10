@@ -354,6 +354,13 @@ section.gallery{
     }
 }
 
+section.comments{
+    margin: auto 200px;
+    h3{
+        font-size: 1.5em;
+    }
+}
+
 footer{
     border-top: 1px solid rgb(224, 224, 224);
     position: relative;
@@ -361,7 +368,7 @@ footer{
     line-height: 150px;
     text-align: center;
 
-    .icon{
+    a .icon{
         border: 1px solid rgb(224, 224, 224);
         border-radius: 100%;
         width: 50px;

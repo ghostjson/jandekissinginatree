@@ -399,6 +399,14 @@ section.gallery .owl-nav .owl-next {
   right: 10px;
 }
 
+section.comments {
+  margin: auto 200px;
+}
+
+section.comments h3 {
+  font-size: 1.5em;
+}
+
 footer {
   border-top: 1px solid #e0e0e0;
   position: relative;
@@ -407,7 +415,7 @@ footer {
   text-align: center;
 }
 
-footer .icon {
+footer a .icon {
   border: 1px solid #e0e0e0;
   border-radius: 100%;
   width: 50px;
