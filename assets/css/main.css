@@ -240,7 +240,9 @@ section.instagram {
   border-bottom: 1px solid #e2e1e1;
 }
 
-section.instagram img {
+section.instagram .insta-image {
   margin-top: auto;
+  height: 400px;
+  width: 350px;
 }
 /*# sourceMappingURL=main.css.map */

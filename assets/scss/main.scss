@@ -211,7 +211,9 @@ section.party{
 
 section.instagram{
     border-bottom: 1px solid rgb(226, 225, 225);
-    img{
+    .insta-image{
         margin-top: auto;
+        height: 400px;
+        width: 350px;
     }
 }
