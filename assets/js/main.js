@@ -5,7 +5,7 @@ const controller = new ScrollMagic.Controller();
 // Greet Animation
 const t = new TimelineMax();
 
-t.from('#background', 0.5, {opacity: 1, scale: 1});
+t.from('#background', 0.5, {opacity: 1});
 t.to('header', 0.5, {backgroundColor: 'white', color: 'black'}, 0);
 t.to('header a', 0.5, {color: 'black'}, 0);
 t.from('#about', 0.5, {opacity: 0.5});
@@ -64,16 +64,18 @@ $('.gallery .owl-carousel').owlCarousel({
     nav: true,
     loop:true,
     margin:20,
-    stagePadding: 200,
+    
     responsive:{
         0:{
-            items:1
+            items:1,
+            stagePadding: 0
         },
         600:{
             items:1
         },
         1000:{
-            items:1
+            items:1,
+            stagePadding: 200,
         }
     },
     navText: ['<i class="fas fa-chevron-left"></i>', '<i class="fas fa-chevron-right"></i>']
@@ -84,5 +86,5 @@ $('.gallery .owl-carousel').owlCarousel({
 
 $(document).ready(function(){
     $('blockquote').hide();
-    $('body').css({'overflow': 'auto'});
+    $('body').css({'overflow-y': 'auto'});
 });

@@ -19,6 +19,19 @@ body {
   scroll-behavior: smooth;
 }
 
+.mobile {
+  display: none;
+}
+
+@media (max-width: 1000px) {
+  .desktop {
+    display: none;
+  }
+  .mobile {
+    display: block;
+  }
+}
+
 @font-face {
   font-family: Rubik;
   src: url("./../fonts/Rubik/Rubik-Medium.ttf");
@@ -42,6 +55,7 @@ header {
   position: fixed;
   width: 100%;
   background-color: rgba(255, 255, 255, 0);
+  width: 100vw;
 }
 
 header .logo {
@@ -98,6 +112,7 @@ header nav ul li a {
   opacity: 0.1;
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
+  width: 100vw;
 }
 
 .main-content {
@@ -480,5 +495,79 @@ footer a .icon {
 footer p a {
   font-size: 1.5em;
   color: #7db660;
+}
+
+@media (max-width: 1000px) {
+  .backgroud {
+    width: 100%;
+  }
+  * {
+    overflow-x: hidden;
+  }
+  section {
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+  section.greet {
+    margin: 5px;
+    height: 100vh;
+  }
+  section.about p {
+    margin: 5px;
+  }
+  section.about div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 100%;
+  }
+  section.about img {
+    position: static;
+  }
+  section.instagram img {
+    margin-top: 20px;
+  }
+  section.venue {
+    margin: 5px;
+  }
+  section.venue .schedule {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    -ms-grid-rows: (4)[1fr];
+        grid-template-rows: repeat(1fr, 4);
+  }
+  section.comments {
+    margin: auto 5px;
+  }
+  section.registry {
+    display: block;
+  }
+  section.registry .left-section {
+    margin: 50px auto;
+    padding-top: 5px;
+    padding-left: 5px;
+    text-align: center;
+  }
+  section.registry .left-section p {
+    margin: 0px;
+    text-align: left;
+  }
+  section.registry img {
+    margin: 0 auto;
+    width: 90vw !important;
+  }
+  section.rsvp {
+    height: 100vh;
+  }
+  section.gallery {
+    margin-top: 20px;
+  }
+  footer {
+    z-index: 100;
+  }
 }
 /*# sourceMappingURL=main.css.map */

@@ -18,6 +18,20 @@ body {
     scroll-behavior: smooth;
 }
 
+// modes
+.mobile{
+    display: none;
+}
+
+@media (max-width: 1000px){
+    .desktop{
+        display: none;
+    }
+    .mobile{
+        display: block;
+    }
+}
+
 // variables
 $primary: #7db660;
 
@@ -43,6 +57,7 @@ header {
     position: fixed;
     width: 100%;
     background-color: rgba(255, 255, 255, 0);
+    width: 100vw;
 
     .logo {
         margin-left: 50px;
@@ -91,6 +106,7 @@ header {
     z-index: -5;
     opacity: 0.1;
     transform: scale(1.1);
+    width: 100vw;
 }
 
 .main-content {
@@ -423,5 +439,93 @@ footer {
     p a {
         font-size: 1.5em;
         color: $primary;
+    }
+}
+
+
+// reponsive
+@media (max-width: 1000px){
+    .backgroud{
+        width: 100%;
+    }
+
+    *{
+        overflow-x: hidden;
+    }
+
+    section{
+        height: fit-content;
+    }
+
+    section.greet{
+        margin: 5px;
+        height: 100vh;
+    }
+
+    section.about{
+        p{
+            margin: 5px;
+        }
+
+        div{
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+        }
+
+        img{
+            position: static;
+        }
+    }
+
+    section.instagram{
+        img{
+            margin-top: 20px;
+        }
+    }
+
+    section.venue{
+        margin: 5px;
+        .schedule{
+            grid-template-columns: 1fr;
+            grid-template-rows: repeat(1fr, 4);
+        }
+    }
+
+    section.comments {
+        margin: auto 5px;
+    }
+
+    section.registry {
+        display: block;
+
+
+        .left-section {
+            margin: 50px auto;
+            padding-top: 5px;
+            padding-left: 5px;
+            text-align: center;
+            p {
+                margin: 0px;
+                text-align: left;
+            }
+        }
+
+        img{
+            margin: 0 auto;
+            width: 90vw !important;
+        }
+    }
+
+    section.rsvp{
+        height: 100vh;
+    }
+
+    section.gallery{
+        margin-top: 20px;
+    }
+
+    footer{
+        z-index: 100;
     }
 }
