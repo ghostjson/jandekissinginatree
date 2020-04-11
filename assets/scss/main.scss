@@ -3,18 +3,19 @@
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
-    a{
+    a {
         text-decoration: none;
         color: black;
     }
 }
 
-:focus{
+:focus {
     outline: none;
 }
 
-body{
+body {
     overflow-x: hidden;
+    scroll-behavior: smooth;
 }
 
 // variables
@@ -28,7 +29,12 @@ $primary: #7db660;
 
 @font-face {
     font-family: Myriad;
-    src: url("./../fonts/myriad-pro-cufonfonts/MYRIADPRO-REGULAR.OTF");
+    src: url("./../fonts/myriad-pro-cufonfonts/MyriadPro-Light.otf");
+}
+
+@font-face {
+    font-family: Alex;
+    src: url("./../fonts/Alex_Brush/AlexBrush-Regular.ttf");
 }
 
 header {
@@ -74,7 +80,7 @@ header {
     }
 }
 
-.scrollmagic-pin-spacer{
+.scrollmagic-pin-spacer {
     z-index: -4;
 }
 
@@ -86,8 +92,6 @@ header {
     opacity: 0.1;
     transform: scale(1.1);
 }
-
-
 
 .main-content {
     padding-top: 150px;
@@ -121,183 +125,215 @@ header {
     }
 }
 
-
-section{
+section {
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    color: rgb(83, 83, 83);
+    -webkit-font-smoothing: antialiased;
 
-    h2{
-        font-size: 2.5em;
+
+    small {
+        margin: 20px auto;
+        border-bottom: 2px solid rgb(133, 131, 131);
+        font-size: 0.9em;
+        font-family: Myriad;
+        padding-bottom: 2px;
     }
-    
-    p{
-        margin-left: 300px;
-        margin-right: 300px;
+
+    h2 {
+        font-size: 3.6em;
+        font-family: Alex;
+        font-weight: 200;
         text-align: center;
-        font-size: 1.5em;
+    }
+
+    p {
+        margin-top: 20px;
+        letter-spacing: 1px;
+        text-align: center;
+        font-size: 1.62em;
+        font-family: Myriad;
+        font-weight: 200;
+
+        strong {
+            font-weight: 700;
+        }
     }
 }
 
-section.greet{
+section.greet {
     opacity: 1;
-
+    margin-left: 350px;
+    margin-right: 350px;
 }
 
-section.about{
+section.about {
     position: relative;
-    background: rgb(255,255,255);
-    background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(255,255,255,0.11248249299719892) 78%);
-    img{
+    background: rgb(255, 255, 255);
+    background: linear-gradient(0deg, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0.11248249299719892) 78%);
+    p{
+        margin-left: 350px;
+        margin-right: 350px;
+    }
+    img {
         position: absolute;
         bottom: 0px;
         opacity: 0;
         width: 300px;
         height: 400px;
 
-        &.left-image{
+        &.left-image {
             left: 0px;
             transform: translateX(-200px);
         }
 
-        &.right-image{
+        &.right-image {
             right: 0px;
             transform: translateX(200px);
         }
     }
+
+    p {
+        line-height: 1.4;
+    }
 }
 
-section.party{
+section.party {
     background: #fafafa;
 
-    .slider{
-        margin-top: 100px;
-        .slide{
+    .slider {
+        margin-top: 60px;
+        .slide {
             text-align: center;
             position: relative;
             z-index: 0;
 
-            h3{
+            h3 {
                 padding: 10px;
             }
-            
-            p{
+
+            p {
                 margin: 0 auto;
                 font-size: 1em;
             }
         }
     }
 
-    .owl-nav{
+    .owl-nav {
         z-index: 1;
         font-size: 2.5em;
         color: white;
-        button{
+        button {
             position: absolute;
             top: 50%;
-            text-shadow: 2px 1px 15px rgba(0,0,0,.2);
+            text-shadow: 2px 1px 15px rgba(0, 0, 0, 0.2);
         }
-        .owl-prev{
+        .owl-prev {
             left: 10px;
         }
-        .owl-next{
+        .owl-next {
             right: 10px;
         }
     }
 }
 
-
-section.instagram{
+section.instagram {
+    margin-top: 100px;
     border-bottom: 1px solid rgb(226, 225, 225);
-    .insta-image{
+    .insta-image {
         margin-top: auto;
         height: 400px;
         width: 350px;
     }
 }
 
-section.venue{
+section.venue {
+    margin: 100px 220px;
 
-    margin: auto 220px;
-
-    .schedule{
+    .schedule {
+        margin-top: 80px;
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-gap: 50px;
-        
-        .box{
 
+        .box {
             display: grid;
             grid-template-columns: 100px auto;
 
-            .icon{
+            .icon {
                 border: 1px solid black;
                 width: 60px;
                 height: 60px;
                 display: flex;
                 justify-content: center;
                 align-items: center;
-                img{
+                img {
                     width: 40px;
                 }
-                i{
+                i {
+                    color: black;
                     font-size: 2em;
                 }
             }
-            .content{
-                
-                h3{
+            .content {
+                h3 {
+                    font-family: Myriad;
                     font-size: 1.8em;
                     margin-bottom: 12px;
                 }
 
-                p{
+                p {
                     text-align: left;
                     margin: 0px;
+                    font-size: 1.5em;
                 }
             }
         }
     }
 }
 
-
-section.registry{
+section.registry {
     display: grid;
     grid-template-columns: 40% auto;
     width: 100%;
     justify-content: normal;
     align-items: normal;
+    margin: 0px;
 
-    .left-section{
+    h2 {
+        margin: 10px auto;
+    }
+
+    .left-section {
         padding-top: 200px;
         padding-left: 100px;
-        p{
+        p {
             margin: 0px;
             text-align: left;
         }
     }
 
-    .right-section{
+    .right-section {
         text-align: right;
-        img{
+        img {
             width: fit-content;
         }
     }
 }
 
-section.rsvp{
-
-    .content{
+section.rsvp {
+    .content {
         text-align: center;
 
-        h2{
+        h2 {
             margin: 20px auto;
         }
     }
 
-    .button{
+    .button {
         border: 1px solid black;
         width: 180px;
         height: 40px;
@@ -308,13 +344,13 @@ section.rsvp{
         margin-top: 40px;
         cursor: pointer;
         transition: all 0.5s;
-        
-        &:hover{
+
+        &:hover {
             border: 1px solid $primary;
             color: $primary;
         }
 
-        &.active{
+        &.active {
             border: 1px solid $primary;
             background-color: $primary;
             color: white;
@@ -322,53 +358,54 @@ section.rsvp{
     }
 }
 
-section.gallery{
+section.gallery {
     width: 100%;
-    .slider{
-        .slide{
+    margin: 0px;
+    .slider {
+        .slide {
             text-align: center;
             position: relative;
             z-index: 0;
 
-            img{
+            img {
                 height: 600px;
             }
         }
     }
 
-    .owl-nav{
+    .owl-nav {
         z-index: 1;
         font-size: 2.5em;
         color: white;
-        button{
+        button {
             position: absolute;
             top: 50%;
-            text-shadow: 2px 1px 15px rgba(0,0,0,.2);
+            text-shadow: 2px 1px 15px rgba(0, 0, 0, 0.2);
         }
-        .owl-prev{
+        .owl-prev {
             left: 10px;
         }
-        .owl-next{
+        .owl-next {
             right: 10px;
         }
     }
 }
 
-section.comments{
+section.comments {
     margin: auto 200px;
-    h3{
+    h3 {
         font-size: 1.5em;
     }
 }
 
-footer{
+footer {
     border-top: 1px solid rgb(224, 224, 224);
     position: relative;
     height: 150px;
     line-height: 150px;
     text-align: center;
 
-    a .icon{
+    a .icon {
         border: 1px solid rgb(224, 224, 224);
         border-radius: 100%;
         width: 50px;
@@ -383,7 +420,7 @@ footer{
         background: white;
     }
 
-    p a{
+    p a {
         font-size: 1.5em;
         color: $primary;
     }

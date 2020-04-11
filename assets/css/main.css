@@ -16,6 +16,7 @@
 
 body {
   overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 
 @font-face {
@@ -25,7 +26,12 @@ body {
 
 @font-face {
   font-family: Myriad;
-  src: url("./../fonts/myriad-pro-cufonfonts/MYRIADPRO-REGULAR.OTF");
+  src: url("./../fonts/myriad-pro-cufonfonts/MyriadPro-Light.otf");
+}
+
+@font-face {
+  font-family: Alex;
+  src: url("./../fonts/Alex_Brush/AlexBrush-Regular.ttf");
 }
 
 header {
@@ -149,21 +155,42 @@ section {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  color: #535353;
+  -webkit-font-smoothing: antialiased;
+}
+
+section small {
+  margin: 20px auto;
+  border-bottom: 2px solid #858383;
+  font-size: 0.9em;
+  font-family: Myriad;
+  padding-bottom: 2px;
 }
 
 section h2 {
-  font-size: 2.5em;
+  font-size: 3.6em;
+  font-family: Alex;
+  font-weight: 200;
+  text-align: center;
 }
 
 section p {
-  margin-left: 300px;
-  margin-right: 300px;
+  margin-top: 20px;
+  letter-spacing: 1px;
   text-align: center;
-  font-size: 1.5em;
+  font-size: 1.62em;
+  font-family: Myriad;
+  font-weight: 200;
+}
+
+section p strong {
+  font-weight: 700;
 }
 
 section.greet {
   opacity: 1;
+  margin-left: 350px;
+  margin-right: 350px;
 }
 
 section.about {
@@ -171,6 +198,11 @@ section.about {
   background: white;
   background: -webkit-gradient(linear, left bottom, left top, from(white), color-stop(78%, rgba(255, 255, 255, 0.112482)));
   background: linear-gradient(0deg, white 0%, rgba(255, 255, 255, 0.112482) 78%);
+}
+
+section.about p {
+  margin-left: 350px;
+  margin-right: 350px;
 }
 
 section.about img {
@@ -193,12 +225,16 @@ section.about img.right-image {
           transform: translateX(200px);
 }
 
+section.about p {
+  line-height: 1.4;
+}
+
 section.party {
   background: #fafafa;
 }
 
 section.party .slider {
-  margin-top: 100px;
+  margin-top: 60px;
 }
 
 section.party .slider .slide {
@@ -237,6 +273,7 @@ section.party .owl-nav .owl-next {
 }
 
 section.instagram {
+  margin-top: 100px;
   border-bottom: 1px solid #e2e1e1;
 }
 
@@ -247,10 +284,11 @@ section.instagram .insta-image {
 }
 
 section.venue {
-  margin: auto 220px;
+  margin: 100px 220px;
 }
 
 section.venue .schedule {
+  margin-top: 80px;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 1fr;
@@ -285,10 +323,12 @@ section.venue .schedule .box .icon img {
 }
 
 section.venue .schedule .box .icon i {
+  color: black;
   font-size: 2em;
 }
 
 section.venue .schedule .box .content h3 {
+  font-family: Myriad;
   font-size: 1.8em;
   margin-bottom: 12px;
 }
@@ -296,6 +336,7 @@ section.venue .schedule .box .content h3 {
 section.venue .schedule .box .content p {
   text-align: left;
   margin: 0px;
+  font-size: 1.5em;
 }
 
 section.registry {
@@ -310,6 +351,11 @@ section.registry {
   -webkit-box-align: normal;
       -ms-flex-align: normal;
           align-items: normal;
+  margin: 0px;
+}
+
+section.registry h2 {
+  margin: 10px auto;
 }
 
 section.registry .left-section {
@@ -367,6 +413,7 @@ section.rsvp .button.active {
 
 section.gallery {
   width: 100%;
+  margin: 0px;
 }
 
 section.gallery .slider .slide {

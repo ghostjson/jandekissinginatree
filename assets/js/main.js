@@ -79,20 +79,10 @@ $('.gallery .owl-carousel').owlCarousel({
     navText: ['<i class="fas fa-chevron-left"></i>', '<i class="fas fa-chevron-right"></i>']
 })
 
-// const client_id = 'OdgVKzzPYXN6cljKY5A6iOga2Cb0OUX';
 
-// const sound = new SoundCloudAudio(client_id);
+// Loading
 
-// sound.resolve('https://soundcloud.com/djangodjango/first-light', function(
-//   track
-// ) {
-//   // do smth with track object
-//   // e.g. display data in a view etc.
-//   console.log(track);
- 
-//   // once track is loaded it can be played
-//   sound.play();
- 
-//   // stop playing track and keep silence
-//   sound.pause();
-// });
+$(document).ready(function(){
+    $('blockquote').hide();
+    $('body').css({'overflow': 'auto'});
+});
