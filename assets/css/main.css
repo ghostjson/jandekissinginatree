@@ -113,7 +113,6 @@ header nav ul li a {
   opacity: 0.1;
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
-  width: 100vw;
 }
 
 .main-content {

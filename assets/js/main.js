@@ -1,5 +1,7 @@
 const controller = new ScrollMagic.Controller();
 
+AOS.init();
+
 /** TIMELINES **/
 
 // Greet Animation
