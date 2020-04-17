@@ -6,6 +6,7 @@ const controller = new ScrollMagic.Controller();
 const t = new TimelineMax();
 
 t.from('#background', 0.5, {opacity: 1});
+t.to('#background', 1, {display:'none'},0);
 t.to('header', 0.5, {backgroundColor: 'white', color: 'black'}, 0);
 t.to('header a', 0.5, {color: 'black'}, 0);
 t.from('#about', 0.5, {opacity: 0.5});
@@ -84,7 +85,7 @@ $('.gallery .owl-carousel').owlCarousel({
 
 // Loading
 
-$(document).ready(function(){
-    $('blockquote').hide();
-    $('body').css({'overflow-y': 'auto'});
-});
+// $(document).ready(function(){
+//     $('blockquote').hide();
+//     $('body').css({'overflow-y': 'auto'});
+// });

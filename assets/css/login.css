@@ -40,8 +40,18 @@ body .content {
   font-family: Baloo;
 }
 
+body .content .logo {
+  margin-bottom: 20px;
+}
+
 body .content .logo img {
   width: 300px;
+}
+
+body .content .logo p {
+  font-size: 1em;
+  font-family: Rubik;
+  color: white;
 }
 
 body .content .form form {

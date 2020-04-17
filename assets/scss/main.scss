@@ -58,6 +58,7 @@ header {
     width: 100%;
     background-color: rgba(255, 255, 255, 0);
     width: 100vw;
+    z-index: 5;
 
     .logo {
         margin-left: 50px;
@@ -132,6 +133,7 @@ header {
         text-decoration: none;
         color: white;
         font-size: 1.2em;
+        font-weight: 700;
 
         &:hover {
             background: rgb(125, 182, 96);
@@ -219,6 +221,7 @@ section.about {
 
 section.party {
     background: #fafafa;
+    margin-top: 80px;
 
     .slider {
         margin-top: 60px;
@@ -226,9 +229,11 @@ section.party {
             text-align: center;
             position: relative;
             z-index: 0;
+            font-family: Myriad;
+            color: black;
 
             h3 {
-                padding: 10px;
+                padding: 5px;
             }
 
             p {
@@ -259,8 +264,13 @@ section.party {
 section.instagram {
     margin-top: 100px;
     border-bottom: 1px solid rgb(226, 225, 225);
+    width: 100%;
     .insta-image {
+        position: relative;
+        right:40px;
         margin-top: auto;
+        margin-left: auto;
+        margin-right: auto;
         height: 400px;
         width: 350px;
     }
@@ -318,6 +328,7 @@ section.registry {
     justify-content: normal;
     align-items: normal;
     margin: 0px;
+    padding-top: 100px;
 
     h2 {
         margin: 10px auto;

@@ -56,6 +56,7 @@ header {
   width: 100%;
   background-color: rgba(255, 255, 255, 0);
   width: 100vw;
+  z-index: 5;
 }
 
 header .logo {
@@ -147,6 +148,7 @@ header nav ul li a {
   text-decoration: none;
   color: white;
   font-size: 1.2em;
+  font-weight: 700;
 }
 
 .main-content .button:hover {
@@ -246,6 +248,7 @@ section.about p {
 
 section.party {
   background: #fafafa;
+  margin-top: 80px;
 }
 
 section.party .slider {
@@ -256,10 +259,12 @@ section.party .slider .slide {
   text-align: center;
   position: relative;
   z-index: 0;
+  font-family: Myriad;
+  color: black;
 }
 
 section.party .slider .slide h3 {
-  padding: 10px;
+  padding: 5px;
 }
 
 section.party .slider .slide p {
@@ -290,10 +295,15 @@ section.party .owl-nav .owl-next {
 section.instagram {
   margin-top: 100px;
   border-bottom: 1px solid #e2e1e1;
+  width: 100%;
 }
 
 section.instagram .insta-image {
+  position: relative;
+  right: 40px;
   margin-top: auto;
+  margin-left: auto;
+  margin-right: auto;
   height: 400px;
   width: 350px;
 }
@@ -367,6 +377,7 @@ section.registry {
       -ms-flex-align: normal;
           align-items: normal;
   margin: 0px;
+  padding-top: 100px;
 }
 
 section.registry h2 {
