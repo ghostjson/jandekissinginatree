@@ -13,11 +13,123 @@
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
 
-    
+
+
 </head>
 
 <body>
 
+    <!-- RSVP Modal -->
+    <div class="rsvp-modal">
+        <div class="modal">
+            <div class="heading">
+                <h3>RSVP</h3>
+                <div class="close-btn">
+                    <i class="fas fa-times"></i>
+                </div>
+            </div>
+            <div class="content">
+                <form>
+                    <div class="head">
+                        <h3>Are You Coming ?</h3>
+                        <div class="form-row">
+                            <p class="radio-input">
+                                <input type="radio" id="coming" name="coming" value="yes" checked>
+                                <label for="coming">Will be there</label>
+                            </p>
+                            <p class="radio-input">
+                                <input type="radio" id="not-coming" name="coming" value="no">
+                                <label for="not-coming">Sorry I can't make it</label>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="middle">
+                        <h3>Your Detail</h3>
+                        <div class="form-row">
+                            <div class="input">
+                                <label for="firstname">FIRST NAME</label>
+                                <input type="text" name="firstname" value="John">
+                            </div>
+                            <div class="input">
+                                <label for="lastname">LAST NAME</label>
+                                <input type="text" name="lastname" value="Doe">
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="input">
+                                <label for="phone">PHONE NUMBER</label>
+                                <input type="number" name="phone" value="123456789">
+                            </div>
+                            <div class="input">
+                                <label for="email">EMAIL</label>
+                                <input type="email" name="email">
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <textarea name="allergies" id="allergies"
+                                placeholder="ALLERGIES: PLEASE SEPERATE WITH A COMMA..."></textarea>
+                        </div>
+                    </div>
+                    <div class="middle-2">
+                        <h3>Entrée Option</h3>
+                        <div class="form-row">
+                            <select name="food_option" id="food-option">
+                                <option value="0">Braised Short Rib & Salmon</option>
+                                <option value="1">Braised Short Rib & Shrimp + Scallops</option>
+                                <option value="2">Vegetarian</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="middle3">
+                        <h3>Music Selection</h3>
+                        <div class="form-row">
+                            <a href="#" target="_blank">What Song(s) Would Make Your Night</a>
+                        </div>
+
+                    </div>
+                    <div class="middle4">
+                        <h3>Additional Guests</h3>
+                        <div class="form-row">
+                        <textarea name="add_guests" id="add_guests" placeholder="PLEASE LIST YOUR ADDITIONAL GUEST(S) MENTIONED ON YOUR INVITATION. PLEASE LIST THEIR FULL NAME AND CONTACT DETAILS, AS WELL AS THEIR ENTRÉE SELECTIONS."></textarea>
+                    
+                        </div>
+                    </div>
+                    <div class="middle5">
+                        <h3>Travel</h3>
+                        <div class="form-row">
+                            <p class="radio-input">
+                                <input type="radio" id="travel-outside" name="travel" value="outside">
+                                <label for="travel-outside">I’m traveling from out of Country</label>
+                            </p>
+                            <p class="radio-input">
+                                <input type="radio" id="travel-inside" name="travel" value="inside">
+                                <label for="travel-inside">I live in Ontario</label>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="bottom">
+                        <h3>Leave Us A Message</h3>
+                        <div class="form-row">
+                            <textarea name="message" id="message" placeholder="MESSAGE HERE..."></textarea>
+                        </div>
+                    </div>
+                    <div class="bottom-buttons">
+                        <button class="button button-close">
+                            CLOSE
+                        </button>
+                        <button type="submit" class="button button-submit">
+                            SUBMIT
+                        </button>
+                    </div>
+
+                    <div class="ps">
+                        <p>*Please note additional guests/plus-ones will not be accounted for unless mentioned on your invitation and/or previously discussed.</p>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- /RSVP Modal-->
 
 
     <!-- Facebook Comment Plugin
@@ -46,7 +158,7 @@
         </nav>
     </header>
 
- 
+
     <div class="backgroud" id="background" style="background-image: url('./assets/images/background.jpg');"></div>
 
     <!-- <div class="background mobile" style="background-image: url('./assets/images/background.jpg');"></div> -->
@@ -57,7 +169,7 @@
             <img src="./assets/images/jandekissinginatree.png" width="400" alt="">
         </div>
 
-        <a href="#">
+        <a>
             <div class="button">
                 RSVP NOW
             </div>
@@ -67,15 +179,26 @@
     <section class="greet" id="greet">
         <div class="background"></div>
         <h2>We’re Getting Married !</h2>
-        <p>Hi, <strong>John</strong> we joyfully invite you to share our happiness as we unite in marriage on August 13, 2021.</p>
+        <p>Hi, <strong>John</strong> we joyfully invite you to share our happiness as we unite in marriage on August 13,
+            2021.</p>
     </section>
 
     <section class="about" id="about">
         <small>ABOUT US</small>
         <h2>How We Met</h2>
-        <p>We met in the late Summer of August 2018 at 2 of our best friends weddings. I was a bridesmaid and he was the best man. I remember him walking through the Church doors for rehearsal and thinking he had the most beautiful dark skin. He kept giving me covert glances throughout the rehearsal. We got a chance to sit together at the wedding reception and started to talk and really hit it off. We had our first dance at the same venue as our now current reception. We exchanged numbers and talked every night on video call when he went back home. 2 months later while visiting Bermuda, he asked me to be his girl and to make it official.</p>
-        <p> For a year we dated while going back and forth and during that time we both realized this was it for the both of us. This was my ‘mutual weirdness forever’. We just fit. He had the same humour as me and we never had a problem making each other laugh. He loved me and was never afraid to say it or show it (and vice versa). On January 11, a year and 5 months later, he put a beautiful picnic together at secluded beach, got down on 1 knee and asked me do the honour of being his wife. And so our adventure begins…</p>
-        
+        <p>We met in the late Summer of August 2018 at 2 of our best friends weddings. I was a bridesmaid and he was the
+            best man. I remember him walking through the Church doors for rehearsal and thinking he had the most
+            beautiful dark skin. He kept giving me covert glances throughout the rehearsal. We got a chance to sit
+            together at the wedding reception and started to talk and really hit it off. We had our first dance at the
+            same venue as our now current reception. We exchanged numbers and talked every night on video call when he
+            went back home. 2 months later while visiting Bermuda, he asked me to be his girl and to make it official.
+        </p>
+        <p> For a year we dated while going back and forth and during that time we both realized this was it for the
+            both of us. This was my ‘mutual weirdness forever’. We just fit. He had the same humour as me and we never
+            had a problem making each other laugh. He loved me and was never afraid to say it or show it (and vice
+            versa). On January 11, a year and 5 months later, he put a beautiful picnic together at secluded beach, got
+            down on 1 knee and asked me do the honour of being his wife. And so our adventure begins…</p>
+
         <div>
             <img class="left-image" id="left-image" src="https://via.placeholder.com/300x400.png">
             <img class="right-image" id="right-image" src="https://via.placeholder.com/300x400.png">
@@ -180,7 +303,8 @@
     <section class="instagram" data-aos="fade-up" data-aos-duration="2000">
         <small>Instagram</small>
         <h2>A Picture Is Worth A Thousand Words</h2>
-        <p>if you love taking pictures, please help us document our wedding by using the hashtag #JandEKissingInATree.</p>
+        <p>if you love taking pictures, please help us document our wedding by using the hashtag #JandEKissingInATree.
+        </p>
 
         <div class="insta-image">
             <a href="#">
@@ -223,7 +347,9 @@
                 </div>
                 <div class="content">
                     <h3>5:30 PM - Cocktail Hour</h3>
-                    <p>The cocktail hour will immediately follow the ceremony at Paradise Banquet & Convention Centre. Please enjoy a cocktail and some savoury treats while we take professional group pictures with our attendees..</p>
+                    <p>The cocktail hour will immediately follow the ceremony at Paradise Banquet & Convention Centre.
+                        Please enjoy a cocktail and some savoury treats while we take professional group pictures with
+                        our attendees..</p>
                 </div>
             </div>
             <div class="box">
@@ -232,14 +358,16 @@
                 </div>
                 <div class="content">
                     <h3>6:30 PM - Dinner and Dance</h3>
-                    <p>Join us for a four-course meal followed by dance and late-night surprises! We’ve arranged for an awesome DJ and ensured that he would be catering to all of us.</p>
+                    <p>Join us for a four-course meal followed by dance and late-night surprises! We’ve arranged for an
+                        awesome DJ and ensured that he would be catering to all of us.</p>
                 </div>
             </div>
             <div class="box">
                 <div class="icon"><i class="fas fa-car-side"></i></div>
                 <div class="content">
                     <h3>1:00 AM - Drive Safe</h3>
-                    <p>And that’s a wrap! Thank you for celebrating with us on this wonderful day. Don’t leave anything behind and remember to drive safe!</p>
+                    <p>And that’s a wrap! Thank you for celebrating with us on this wonderful day. Don’t leave anything
+                        behind and remember to drive safe!</p>
                 </div>
             </div>
         </div>
@@ -251,7 +379,11 @@
         <div class="left-section" data-aos="fade-up" data-aos-duration="2000">
             <small>REGISTRY</small>
             <h2>No Boxed Gifts Please</h2>
-            <p>While personal gifts of household items or sentimental pieces are greatly appreciated, we will be traveling back to Bermuda shortly after the wedding to live and would like to travel back with as little extra luggage as possible. Therefore, we would greatly welcome monetary gifts; it will hopefully save you time and hassle in shopping, as well as help us start our new lives as efficiently as possible :)</p>
+            <p>While personal gifts of household items or sentimental pieces are greatly appreciated, we will be
+                traveling back to Bermuda shortly after the wedding to live and would like to travel back with as little
+                extra luggage as possible. Therefore, we would greatly welcome monetary gifts; it will hopefully save
+                you time and hassle in shopping, as well as help us start our new lives as efficiently as possible :)
+            </p>
         </div>
         <div class="right-section">
             <img src="./assets/images/thankyou.png" alt="">
@@ -316,7 +448,9 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
 
     <script src="./assets/js/owl.carousel.min.js"></script>
-    
+
+
+
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
     <script src="./assets/js/main.js"></script>

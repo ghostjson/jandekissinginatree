@@ -16,6 +16,229 @@
 body {
     overflow-x: hidden;
     scroll-behavior: smooth;
+    overflow-y: hidden;
+}
+
+[type="radio"]:checked,
+[type="radio"]:not(:checked) {
+    position: absolute;
+    left: -9999px;
+}
+[type="radio"]:checked + label,
+[type="radio"]:not(:checked) + label
+{
+    position: relative;
+    padding-left: 28px;
+    cursor: pointer;
+    line-height: 20px;
+    display: inline-block;
+    color: #666;
+}
+[type="radio"]:checked + label:before,
+[type="radio"]:not(:checked) + label:before {
+    content: '';
+    position: absolute;
+    left: -8px;
+    top: -7px;
+    width: 28px;
+    height: 28px;
+    border: 1px solid #ddd;
+    border-radius: 100%;
+    background: #fff;
+    border: 2px solid rgb(133, 132, 132);
+}
+[type="radio"]:checked + label:after,
+[type="radio"]:not(:checked) + label:after {
+    content: '';
+    width: 23px;
+    height: 23px;
+    background: #7db660;
+    position: absolute;
+    top: -2.5px;
+    left: -3.5px;
+    border-radius: 100%;
+    -webkit-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+}
+[type="radio"]:not(:checked) + label:after {
+    opacity: 0;
+    -webkit-transform: scale(0);
+    transform: scale(0);
+}
+[type="radio"]:checked + label:after {
+    opacity: 1;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+}
+
+.rsvp-modal{
+    background: transparent;
+    z-index: 999999;
+    position: fixed;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    min-height: 100%;
+    overflow-y: scroll;
+    background: rgba(0, 0, 0, 0.109);
+    
+    .modal{
+        background: white;
+        width: 700px;
+        height: 100vh;
+        margin-top: 20px;
+        box-shadow: 0 1px 4px rgba(0,0,0,.2);
+
+        .heading{
+            height: 70px;
+            background: white;
+            color: #333;
+            display: flex;
+            padding: 20px;
+            font-size: 1.6em;
+            font-family: Myriad;
+            font-weight: 600;
+            justify-content: space-between;
+            border-bottom: 1px solid rgb(238, 238, 238);
+            .close-btn{
+                font-size: 1.2em;
+                color: rgb(179, 178, 178);
+            }
+        }
+        
+        .content{
+            background: #f9f9f9;
+            padding: 40px;
+
+
+            h3{
+                font-size: 1.9em;
+                color: #7db660;
+                font-family: Myriad;
+
+            }
+
+            & > form > div{
+                margin: 30px 0;
+            }
+
+
+            .form-row{
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                padding-top: 20px;
+                padding-bottom: 20px;
+                font-size: 1.5em;
+                font-family: Myriad;
+                grid-gap: 25px;
+
+                textarea{
+                    grid-column: 1/3;
+                    width: 100%;
+                    padding: 10px;
+                    font-size: 0.9em;
+                    font-weight: 600;
+                    color: rgb(105, 105, 105);
+                    height: 100px;
+
+                    &::placeholder,&:-ms-input-placeholder,&::-ms-input-placeholder {
+                        font-size: 1em;
+                        padding: 5px;
+                        color: rgb(131, 130, 130);
+                        font-weight: 200;
+                    }
+                }
+
+
+                select{
+                    background: white;
+                    border: 1px solid rgb(167, 167, 167);
+                    font-size: 1em;
+                    color: rgb(105, 105, 105);
+                    padding: 5px;
+                }
+
+                a{
+                    font-size: 0.8em;
+                    grid-column: 1 / 3;
+                    transition: all 0.5s;
+                    &:hover{
+                        color: #7db660;
+                    }
+                }
+            }
+
+            .radio-input{
+                margin-left: 6px;
+            }
+
+            .input{
+                background: white;
+                display: grid;
+                border: 1px solid rgb(167, 167, 167);
+                padding: 1px;
+
+                label{
+                    font-size: 0.8em;
+                    padding: 5px;
+                    color: rgb(131, 130, 130);
+                    padding-bottom: 2px;
+                }
+
+                input{
+                    padding: 5px;
+                    padding-top: 0px;
+                    border: none;
+                    font-size: 0.9em;
+                    font-weight: 600;
+                    color: rgb(105, 105, 105);
+                    width: 100%;
+                }
+            }
+
+            .bottom-buttons{
+                display: flex;
+                justify-content: space-between;
+                .button{
+                    width: 200px;
+                    margin: 1px;
+                    padding: 13px;
+                    font-size: 1.1em;
+                    cursor: pointer;
+                    font-weight: 600;
+                    border-radius: 5px;
+
+                    &.button-close{
+                        background: none;
+                        border: 1px solid black;
+
+                        &:hover{
+                            color: #7db660;
+                            border: 1px solid #7db660;
+                        }
+                    }
+
+                    &.button-submit{
+                        background: #7db660;
+                        background: radial-gradient(circle, rgba(125, 182, 96, 1) 0%, rgba(121, 171, 95, 1) 100%);
+                        color: white;
+                        border: 1px solid #7db660;
+
+                        &:hover{
+                            background: radial-gradient(circle, rgb(106, 153, 83) 0%, rgb(108, 149, 86) 100%);
+                        }
+                    }
+                 
+                }
+            }
+
+            .ps{
+                color: #67954f;
+            }
+
+        }
+    }
 }
 
 // modes
