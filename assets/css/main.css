@@ -19,6 +19,10 @@ body {
   scroll-behavior: smooth;
 }
 
+.background-mobile {
+  display: none;
+}
+
 [type="radio"]:checked,
 [type="radio"]:not(:checked) {
   position: absolute;
@@ -37,7 +41,7 @@ body {
 
 [type="radio"]:checked + label:before,
 [type="radio"]:not(:checked) + label:before {
-  content: '';
+  content: "";
   position: absolute;
   left: -8px;
   top: -7px;
@@ -51,7 +55,7 @@ body {
 
 [type="radio"]:checked + label:after,
 [type="radio"]:not(:checked) + label:after {
-  content: '';
+  content: "";
   width: 23px;
   height: 23px;
   background: #7db660;
@@ -98,7 +102,7 @@ body {
 .rsvp-modal .modal {
   background: white;
   margin: 0 auto;
-  width: 700px;
+  max-width: 700px;
   max-height: 100vh;
   margin-top: 20px;
   -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
@@ -320,6 +324,7 @@ header {
   background-color: rgba(255, 255, 255, 0);
   width: 100vw;
   z-index: 5;
+  border-bottom: 1px solid rgba(236, 236, 236, 0);
 }
 
 header .logo {
@@ -360,9 +365,17 @@ header nav ul li.rsvp a {
   letter-spacing: 1.5px;
 }
 
+header nav ul li.rsvp a.active {
+  color: white !important;
+}
+
 header nav ul li a {
   text-decoration: none;
   color: white;
+}
+
+header nav ul li a.active {
+  color: #7db660 !important;
 }
 
 .scrollmagic-pin-spacer {
@@ -459,7 +472,7 @@ section p {
   margin-top: 20px;
   letter-spacing: 1px;
   text-align: center;
-  font-size: 1.62em;
+  font-size: 1.5em;
   font-family: Myriad;
   font-weight: 200;
 }
@@ -477,13 +490,14 @@ section.greet {
 section.about {
   position: relative;
   background: white;
+  margin-top: 200px;
   background: -webkit-gradient(linear, left bottom, left top, from(white), color-stop(78%, rgba(255, 255, 255, 0.112482)));
   background: linear-gradient(0deg, white 0%, rgba(255, 255, 255, 0.112482) 78%);
 }
 
 section.about p {
-  margin-left: 350px;
-  margin-right: 350px;
+  margin-left: 300px;
+  margin-right: 300px;
 }
 
 section.about img {
@@ -668,6 +682,10 @@ section.registry .right-section img {
   width: fit-content;
 }
 
+section.rsvp {
+  margin: 100px auto;
+}
+
 section.rsvp .content {
   text-align: center;
 }
@@ -773,16 +791,31 @@ footer p a {
 }
 
 @media (max-width: 1000px) {
-  .backgroud {
+  .background-mobile {
+    display: block;
+    position: absolute;
+    z-index: -2;
+  }
+  .background-mobile img {
+    height: 100vh;
+    -o-object-fit: cover;
+       object-fit: cover;
     width: 100%;
   }
   * {
     overflow-x: hidden;
+    font-size: 1em;
   }
   section {
     height: -webkit-fit-content;
     height: -moz-fit-content;
     height: fit-content;
+  }
+  .main-content {
+    margin-top: 100px;
+  }
+  .main-content .main-image img {
+    width: 80vw;
   }
   section.greet {
     margin: 5px;
@@ -815,6 +848,9 @@ footer p a {
     -ms-grid-rows: (4)[1fr];
         grid-template-rows: repeat(1fr, 4);
   }
+  #venue .schedule {
+    width: 100%;
+  }
   section.comments {
     margin: auto 5px;
   }
@@ -836,13 +872,77 @@ footer p a {
     width: 90vw !important;
   }
   section.rsvp {
-    height: 100vh;
+    height: 60vh;
+    margin: 0px;
   }
   section.gallery {
     margin-top: 20px;
   }
+  section.gallery .slider .slide img {
+    height: auto;
+  }
   footer {
-    z-index: 100;
+    height: auto;
+    margin-top: 50px;
+    overflow: auto;
+  }
+  footer div.icon {
+    top: 12px;
+  }
+  .rsvp-modal {
+    width: 100%;
+  }
+  .rsvp-modal .modal {
+    width: 95vw;
+  }
+  .rsvp-modal .modal .content {
+    padding: 15px;
+  }
+  .rsvp-modal .modal .content h3 {
+    font-size: 1.2em;
+  }
+  .rsvp-modal .modal .content > form > div {
+    margin: 0px;
+  }
+  [type="radio"]:checked,
+  [type="radio"]:not(:checked) {
+    position: absolute;
+    left: -9999px;
+  }
+  [type="radio"]:checked + label,
+  [type="radio"]:not(:checked) + label {
+    position: relative;
+    padding-left: 28px;
+    cursor: pointer;
+    line-height: 20px;
+    display: inline-block;
+    color: #666;
+  }
+  [type="radio"]:checked + label:before,
+  [type="radio"]:not(:checked) + label:before {
+    content: "";
+    position: absolute;
+    left: 0px;
+    top: -1px;
+    width: 18px;
+    height: 18px;
+    border: 1px solid #ddd;
+    border-radius: 100%;
+    background: #fff;
+    border: 2px solid #858484;
+  }
+  [type="radio"]:checked + label:after,
+  [type="radio"]:not(:checked) + label:after {
+    content: "";
+    width: 13px;
+    height: 13px;
+    background: #7db660;
+    position: absolute;
+    top: 3px;
+    left: 5px;
+    border-radius: 100%;
+    -webkit-transition: all 0.2s ease;
+    transition: all 0.2s ease;
   }
 }
 /*# sourceMappingURL=main.css.map */

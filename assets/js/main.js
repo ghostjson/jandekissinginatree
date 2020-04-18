@@ -2,14 +2,18 @@ const controller = new ScrollMagic.Controller();
 
 AOS.init();
 
+const scrollspy = new VanillaScrollspy(document.querySelector('nav'));
+scrollspy.init();
+
+
 /** TIMELINES **/
 
 // Greet Animation
 const t = new TimelineMax();
 
 t.from('#background', 0.5, { opacity: 1 });
-t.to('#background', 1, { display: 'none' }, 0);
-t.to('header', 0.5, { backgroundColor: 'white', color: 'black' }, 0);
+t.to('#background', 1, { display: 'none'}, 0);
+t.to('header', 0.5, { backgroundColor: 'white', color: 'black' , borderColor: 'rgb(236, 236, 236)'}, 0);
 t.to('header a', 0.5, { color: 'black' }, 0);
 t.from('#about', 0.5, { opacity: 0.5 });
 
@@ -37,7 +41,6 @@ new ScrollMagic.Scene({
     duration: 500,
 
 })
-    .addIndicators()
     .setTween(t_about)
     .addTo(controller)
 
