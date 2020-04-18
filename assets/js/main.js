@@ -7,18 +7,18 @@ AOS.init();
 // Greet Animation
 const t = new TimelineMax();
 
-t.from('#background', 0.5, {opacity: 1});
-t.to('#background', 1, {display:'none'},0);
-t.to('header', 0.5, {backgroundColor: 'white', color: 'black'}, 0);
-t.to('header a', 0.5, {color: 'black'}, 0);
-t.from('#about', 0.5, {opacity: 0.5});
+t.from('#background', 0.5, { opacity: 1 });
+t.to('#background', 1, { display: 'none' }, 0);
+t.to('header', 0.5, { backgroundColor: 'white', color: 'black' }, 0);
+t.to('header a', 0.5, { color: 'black' }, 0);
+t.from('#about', 0.5, { opacity: 0.5 });
 
 
 // About Animation
 const t_about = new TimelineMax();
 
-t_about.to('#left-image', 0.5, {opacity: 1, x: 0});
-t_about.to('#right-image', 0.5, {opacity: 1, x: 0},0);
+t_about.to('#left-image', 0.5, { opacity: 1, x: 0 });
+t_about.to('#right-image', 0.5, { opacity: 1, x: 0 }, 0);
 
 
 /** SCENES **/
@@ -27,9 +27,9 @@ t_about.to('#right-image', 0.5, {opacity: 1, x: 0},0);
 new ScrollMagic.Scene({
     duration: 1200,
 })
-.setPin('#background')
-.setTween(t)
-.addTo(controller)
+    .setPin('#background')
+    .setTween(t)
+    .addTo(controller)
 
 // Scene 2
 new ScrollMagic.Scene({
@@ -37,26 +37,26 @@ new ScrollMagic.Scene({
     duration: 500,
 
 })
-.addIndicators()
-.setTween(t_about)
-.addTo(controller)
+    .addIndicators()
+    .setTween(t_about)
+    .addTo(controller)
 
 
 
 // Owl Carousel
 $('.party .owl-carousel').owlCarousel({
     nav: true,
-    loop:true,
-    margin:10,
-    responsive:{
-        0:{
-            items:1
+    loop: true,
+    margin: 10,
+    responsive: {
+        0: {
+            items: 1
         },
-        600:{
-            items:3
+        600: {
+            items: 3
         },
-        1000:{
-            items:5
+        1000: {
+            items: 5
         }
     },
     navText: ['<i class="fas fa-chevron-left"></i>', '<i class="fas fa-chevron-right"></i>']
@@ -65,19 +65,19 @@ $('.party .owl-carousel').owlCarousel({
 // Image slider
 $('.gallery .owl-carousel').owlCarousel({
     nav: true,
-    loop:true,
-    margin:20,
-    
-    responsive:{
-        0:{
-            items:1,
+    loop: true,
+    margin: 20,
+
+    responsive: {
+        0: {
+            items: 1,
             stagePadding: 0
         },
-        600:{
-            items:1
+        600: {
+            items: 1
         },
-        1000:{
-            items:1,
+        1000: {
+            items: 1,
             stagePadding: 200,
         }
     },
@@ -86,9 +86,22 @@ $('.gallery .owl-carousel').owlCarousel({
 
 
 // rsvp form logic
-$(document).ready(()=>{
-    console.log($('.modal .content form div').slice(2));
-    
-    $('#not-coming').click(()=> $('.modal .content form div').slice(2, -2).hide())
-    $('#coming').click(()=> $('.modal .content form div').slice(2).show())
+$(document).ready(() => {
+
+    $('#not-coming').click(() => $('.modal .content form div').slice(2, -2).hide())
+    $('#coming').click(() => $('.modal .content form div').slice(2).show())
+
+    // popup logic
+    $('.rsvp-dialog').click(() => {
+        $('#rsvp-modal').fadeIn()
+        $('body').css({ 'overflow-y': 'hidden' });
+    })
+
+    // close modal
+    $('.close-modal').click(()=>{
+        $('#rsvp-modal').fadeOut()
+        $('body').css({'overflow-y': 'scroll'});
+        return false;
+    })
+
 })

@@ -17,7 +17,6 @@
 body {
   overflow-x: hidden;
   scroll-behavior: smooth;
-  overflow-y: hidden;
 }
 
 [type="radio"]:checked,
@@ -93,10 +92,12 @@ body {
   min-height: 100%;
   overflow-y: scroll;
   background: rgba(0, 0, 0, 0.109);
+  display: none;
 }
 
 .rsvp-modal .modal {
   background: white;
+  margin: 0 auto;
   width: 700px;
   max-height: 100vh;
   margin-top: 20px;
@@ -410,6 +411,7 @@ header nav ul li a {
   color: white;
   font-size: 1.2em;
   font-weight: 700;
+  cursor: pointer;
 }
 
 .main-content .button:hover {

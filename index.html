@@ -20,11 +20,11 @@
 <body>
 
     <!-- RSVP Modal -->
-    <div class="rsvp-modal">
+    <div class="rsvp-modal" id="rsvp-modal">
         <div class="modal">
             <div class="heading">
                 <h3>RSVP</h3>
-                <div class="close-btn">
+                <div class="close-btn close-modal">
                     <i class="fas fa-times"></i>
                 </div>
             </div>
@@ -114,7 +114,7 @@
                         </div>
                     </div>
                     <div class="bottom-buttons">
-                        <button class="button button-close">
+                        <button class="button button-close close-modal" type="button">
                             CLOSE
                         </button>
                         <button type="submit" class="button button-submit">
@@ -170,7 +170,7 @@
         </div>
 
         <a>
-            <div class="button">
+            <div class="rsvp-dialog button">
                 RSVP NOW
             </div>
         </a>
@@ -398,7 +398,7 @@
 
         </div>
 
-        <div class="button">
+        <div class="button rsvp-dialog ">
             RSVP NOW
         </div>
 
