@@ -347,6 +347,7 @@ header nav ul {
 
 header nav ul li {
   margin-left: 40px;
+  font-weight: 600;
 }
 
 header nav ul li.rsvp a {
