@@ -86,7 +86,7 @@ body {
     .modal{
         background: white;
         width: 700px;
-        height: 100vh;
+        max-height: 100vh;
         margin-top: 20px;
         box-shadow: 0 1px 4px rgba(0,0,0,.2);
 
@@ -104,6 +104,7 @@ body {
             .close-btn{
                 font-size: 1.2em;
                 color: rgb(179, 178, 178);
+                cursor: pointer;
             }
         }
         

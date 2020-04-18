@@ -85,9 +85,10 @@ $('.gallery .owl-carousel').owlCarousel({
 })
 
 
-// Loading
-
-// $(document).ready(function(){
-//     $('blockquote').hide();
-//     $('body').css({'overflow-y': 'auto'});
-// });
+// rsvp form logic
+$(document).ready(()=>{
+    console.log($('.modal .content form div').slice(2));
+    
+    $('#not-coming').click(()=> $('.modal .content form div').slice(2, -2).hide())
+    $('#coming').click(()=> $('.modal .content form div').slice(2).show())
+})
