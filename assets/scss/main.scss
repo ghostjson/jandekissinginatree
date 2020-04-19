@@ -657,9 +657,87 @@ section.gallery {
 }
 
 section.comments {
-    margin: auto 200px;
+    padding: 100px 200px;
+    height: auto;
+    background: #f9f9f9;
     h3 {
-        font-size: 1.5em;
+        width: 100%;
+        text-align: left;
+        font-size: 2em;
+    }
+
+    .comment-section{
+        margin-top: 20px;
+        .input{
+
+            background: white;
+            border: 1px solid rgb(231, 231, 231);
+            padding: 30px;
+            padding-bottom: 10px;
+        
+            textarea{
+                width: 100%;
+                height: 100px;
+                padding: 10px;
+                border: 1px solid rgb(231, 231, 231);
+            }
+
+            .button{
+                text-align: right;
+
+                button{
+                    background: #7db660;
+                    border: none;
+                    color: white;
+                    width: 140px;
+                    margin: 1px;
+                    padding: 6px;
+                    font-size: 0.9em;
+                    cursor: pointer;
+                    font-weight: 600;
+                    border-radius: 5px;
+                }
+            }
+        }
+
+        .comments-group{
+            margin: 10px auto;
+
+            .comment{
+                background: white;
+                margin: 10px 0;
+                padding: 10px;
+                border: 1px solid rgb(231, 231, 231);
+
+                .name{
+                    font-weight: 700;
+                    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+                    font-size: 1.2em;
+                }
+
+                .date{
+                    font-size: 0.9em;
+                    font-weight: 700;
+                    font-family: 'Times New Roman', Times, serif;
+                }
+
+                .message-content{
+                    font-size: 1.15em;
+                    font-family: Myriad;
+                    margin-top: 10px;
+                }
+            }
+        }
+
+        .loadmore{
+            margin-top: 30px;
+            text-align: center;
+
+            a{
+                font-size: 1em;
+                color: $primary;
+            }
+        }
     }
 }
 
