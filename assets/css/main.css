@@ -1,3 +1,7 @@
+/*html{
+  scroll-behavior: smooth;
+}*/
+
 * {
   margin: 0px;
   padding: 0px;
@@ -8,6 +12,11 @@
 * a {
   text-decoration: none;
   color: black;
+}
+
+@font-face {
+  font-family: Raleway;
+  src: url("./../fonts/Raleway/Raleway-Light.ttf");
 }
 
 :focus {
@@ -34,6 +43,7 @@ body {
   position: relative;
   padding-left: 28px;
   cursor: pointer;
+  font-size: 24px;
   line-height: 20px;
   display: inline-block;
   color: #666;
@@ -58,7 +68,7 @@ body {
   content: "";
   width: 23px;
   height: 23px;
-  background: #7db660;
+  background: #00362d;
   position: absolute;
   top: -2.5px;
   left: -3.5px;
@@ -138,8 +148,8 @@ body {
 }
 
 .rsvp-modal .modal .content h3 {
-  font-size: 1.9em;
-  color: #7db660;
+  font-size: 26px;
+  color: #004b3f;
   font-family: Myriad;
 }
 
@@ -165,7 +175,7 @@ body {
   grid-column: 1/3;
   width: 100%;
   padding: 10px;
-  font-size: 0.9em;
+  font-size: 19px;
   font-weight: 600;
   color: dimgray;
   height: 100px;
@@ -195,13 +205,13 @@ body {
 .rsvp-modal .modal .content .form-row select {
   background: white;
   border: 1px solid #a7a7a7;
-  font-size: 1em;
+  font-size: 0.8em;
   color: dimgray;
   padding: 5px;
 }
 
 .rsvp-modal .modal .content .form-row a {
-  font-size: 0.8em;
+  font-size: 19px;
   -ms-grid-column: 1;
   -ms-grid-column-span: 2;
   grid-column: 1 / 3;
@@ -210,7 +220,7 @@ body {
 }
 
 .rsvp-modal .modal .content .form-row a:hover {
-  color: #7db660;
+  color: #00362d;
 }
 
 .rsvp-modal .modal .content .radio-input {
@@ -226,7 +236,7 @@ body {
 }
 
 .rsvp-modal .modal .content .input label {
-  font-size: 0.8em;
+  font-size: 17px;
   padding: 5px;
   color: #838282;
   padding-bottom: 2px;
@@ -236,8 +246,8 @@ body {
   padding: 5px;
   padding-top: 0px;
   border: none;
-  font-size: 0.9em;
-  font-weight: 600;
+  font-size: 19px;
+  font-weight: 400;
   color: dimgray;
   width: 100%;
 }
@@ -267,23 +277,23 @@ body {
 }
 
 .rsvp-modal .modal .content .bottom-buttons .button.button-close:hover {
-  color: #7db660;
-  border: 1px solid #7db660;
+  color: #00362d;
+  border: 1px solid #00362d;
 }
 
 .rsvp-modal .modal .content .bottom-buttons .button.button-submit {
-  background: #7db660;
-  background: radial-gradient(circle, #7db660 0%, #79ab5f 100%);
+  background: #00362d;
+  background: radial-gradient(circle, #004b3f 0%, #004b3f 100%);
   color: white;
-  border: 1px solid #7db660;
+  border: 1px solid #00362d;
 }
 
 .rsvp-modal .modal .content .bottom-buttons .button.button-submit:hover {
-  background: radial-gradient(circle, #6a9953 0%, #6c9556 100%);
+  background: radial-gradient(circle, #00362d 0%, #00362d 100%);
 }
 
 .rsvp-modal .modal .content .ps {
-  color: #67954f;
+  color: #004b3f;
 }
 
 .mobile {
@@ -338,7 +348,7 @@ header .logo img {
 header nav {
   margin-left: auto;
   margin-right: 80px;
-  font-family: Myriad;
+  font-family: sans-serif;
   font-size: 1em;
 }
 
@@ -352,11 +362,11 @@ header nav ul {
 
 header nav ul li {
   margin-left: 40px;
-  font-weight: 600;
+  font-weight: 400;
 }
 
 header nav ul li.rsvp a {
-  background: #7db660;
+  background: #004b3f;
   padding: 8px 20px;
   border-radius: 5px;
   color: white !important;
@@ -375,7 +385,7 @@ header nav ul li a {
 }
 
 header nav ul li a.active {
-  color: #7db660 !important;
+  color: #00362d !important;
 }
 
 .scrollmagic-pin-spacer {
@@ -429,9 +439,14 @@ header nav ul li a.active {
 }
 
 .main-content .button:hover {
-  background: #7db660;
-  background: radial-gradient(circle, #7db660 0%, #79ab5f 100%);
-  border: 2px solid #7db660;
+  background: #00362d;
+  background: radial-gradient(circle, #00362d 0%, #00362d 100%);
+  border: 2px solid #00362d;
+}
+
+.main-content .down-arrow img {
+  margin-top: 290px;
+  height: 30px;
 }
 
 section {
@@ -455,7 +470,7 @@ section {
 
 section small {
   margin: 20px auto;
-  border-bottom: 2px solid #858383;
+  border-bottom: 2px solid #a3a3a3;
   font-size: 0.9em;
   font-family: Myriad;
   padding-bottom: 2px;
@@ -470,11 +485,12 @@ section h2 {
 
 section p {
   margin-top: 20px;
+  line-height: 1.4em;
   letter-spacing: 1px;
   text-align: center;
-  font-size: 1.5em;
-  font-family: Myriad;
-  font-weight: 200;
+  font-size: 21px;
+  font-family: Raleway;
+  font-weight: 100;
 }
 
 section p strong {
@@ -496,8 +512,8 @@ section.about {
 }
 
 section.about p {
-  margin-left: 300px;
-  margin-right: 300px;
+  margin-left: 350px;
+  margin-right: 350px;
 }
 
 section.about img {
@@ -537,17 +553,23 @@ section.party .slider .slide {
   text-align: center;
   position: relative;
   z-index: 0;
-  font-family: Myriad;
+  font-family: sans-serif;
   color: black;
+  font-weight: 100;
 }
 
 section.party .slider .slide h3 {
-  padding: 5px;
+  padding: 17px;
+  font-weight: 300;
+  font-size: 1.1em;
+  color: #535353;
 }
 
 section.party .slider .slide p {
-  margin: 0 auto;
+  margin-top: -10px;
   font-size: 1em;
+  font-weight: 200;
+  color: #535353;
 }
 
 section.party .owl-nav {
@@ -632,14 +654,14 @@ section.venue .schedule .box .icon i {
 
 section.venue .schedule .box .content h3 {
   font-family: Myriad;
-  font-size: 1.8em;
+  font-size: 25px;
   margin-bottom: 12px;
 }
 
 section.venue .schedule .box .content p {
   text-align: left;
   margin: 0px;
-  font-size: 1.5em;
+  font-size: 22px;
 }
 
 section.registry {
@@ -709,13 +731,13 @@ section.rsvp .button {
 }
 
 section.rsvp .button:hover {
-  border: 1px solid #7db660;
-  color: #7db660;
+  border: 1px solid #004b3f;
+  color: #004b3f;
 }
 
 section.rsvp .button.active {
-  border: 1px solid #7db660;
-  background-color: #7db660;
+  border: 1px solid #004b3f;
+  background-color: #004b3f;
   color: white;
 }
 
@@ -789,7 +811,7 @@ section.comments .comment-section .input .button {
 }
 
 section.comments .comment-section .input .button button {
-  background: #7db660;
+  background: #004b3f;
   border: none;
   color: white;
   width: 140px;
@@ -837,7 +859,7 @@ section.comments .comment-section .loadmore {
 
 section.comments .comment-section .loadmore a {
   font-size: 1em;
-  color: #7db660;
+  color: #004b3f;
 }
 
 footer {
@@ -864,8 +886,8 @@ footer a .icon {
 }
 
 footer p a {
-  font-size: 1.5em;
-  color: #7db660;
+  font-size: 22px;
+  color: #004b3f;
 }
 
 @media (max-width: 1000px) {
@@ -967,6 +989,7 @@ footer p a {
   footer div.icon {
     top: 12px;
   }
+
   .rsvp-modal {
     width: 100%;
   }
@@ -1014,7 +1037,7 @@ footer p a {
     content: "";
     width: 13px;
     height: 13px;
-    background: #7db660;
+    background: #00362d;
     position: absolute;
     top: 3px;
     left: 5px;
@@ -1023,4 +1046,20 @@ footer p a {
     transition: all 0.2s ease;
   }
 }
+
+.rsvp-modal .modal .content .main-logo img{
+  height: 60px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.logo img {
+    -webkit-transition: all 3s;
+    transition: all 3s;
+}
+/*.rsvp-modal .modal .content .main-logo{
+  
+  width: 50%;
+}*/
 /*# sourceMappingURL=main.css.map */

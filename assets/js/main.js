@@ -108,3 +108,30 @@ $(document).ready(() => {
     })
 
 })
+
+//logo change on scroll
+$(function () { 
+    $(window).scroll(function () {
+        if ($(this).scrollTop() > 250) { 
+            $('.logo img').attr('src','./assets/images/J and E logo(black).png');
+        }
+        if ($(this).scrollTop() < 250) { 
+            $('.logo img').attr('src','./assets/images/J and E logo.png');
+        }
+    })
+});
+
+//scroll smoothly on clinking link
+$(document).ready(function(){
+  $("a").on('click', function(event) {
+    if (this.hash !== "") {
+        event.preventDefault();
+        var hash = this.hash;
+        $('html, body').animate({
+            scrollTop: $(hash).offset().top
+        }, 800, function(){
+        window.location.hash = hash;
+        });
+    } 
+  });
+});
