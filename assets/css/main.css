@@ -16,7 +16,7 @@
 
 @font-face {
   font-family: Raleway;
-  src: url("./../fonts/Raleway/Raleway-Light.ttf");
+  src: url("./../fonts/Raleway/Raleway-Regular.ttf");
 }
 
 :focus {
@@ -704,8 +704,53 @@ section.registry .right-section img {
   width: fit-content;
 }
 
+section .accomodations{
+
+	position: relative;
+  background: white;
+  margin-top: 200px;
+
+}
+
+section.accomodations .accx1, section.accomodations .accx2 {
+	display: flex;
+	
+}
+section.accomodations div , section.accomodations div {
+	height: 200px;
+	width: 100%;
+	margin-bottom: 50px;
+}
+
+section.accomodations .accx1 .acc, section.accomodations .accx2 .acc {
+	margin: 0px;
+	padding: 0px;
+	flex: 1;
+}
+
+section.accomodations .accx1 .acc .icon, section.accomodations .accx2 .acc div{
+	margin-left: 45%;
+}
+section.accomodations .accx1 .acc .icon, section.accomodations .accx2 .acc .icon {
+	height: 65px;
+	width: 65px;
+	padding: 5px;
+}
+
+section.accomodations .accx1 .acc h2, section.accomodations .accx2 .acc h2 {
+	font-size: 3.6em;
+	text-align: center;
+
+}
+
+section.accomodations .accx1 .acc p, section.accomodations .accx2 .acc p {
+ 	text-align: center;
+
+}
+
 section.rsvp {
   margin: 100px auto;
+  margin-top: 0px;
 }
 
 section.rsvp .content {
@@ -979,6 +1024,11 @@ footer p a {
   section.registry img {
     margin: 0 auto;
     width: 90vw !important;
+  }
+
+  section.accomodations .accx1, section.accomodations .accx2 {
+	flex-direction: column;
+	height: 650px;
   }
   section.rsvp {
     height: 60vh;
