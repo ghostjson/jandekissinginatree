@@ -608,6 +608,10 @@ section.instagram .insta-image {
   width: 350px;
 }
 
+section.instagram .insta-image img{
+	padding-top: 50px;
+}
+
 section.venue {
   margin: 100px 220px;
 }
