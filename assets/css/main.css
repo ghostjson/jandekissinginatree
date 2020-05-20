@@ -342,7 +342,7 @@ header .logo {
 }
 
 header .logo img {
-  height: 50px;
+  height: 65px;
 }
 
 header nav {
@@ -613,7 +613,7 @@ section.instagram .insta-image img{
 }
 
 section.venue {
-  margin: 100px 220px;
+  margin: 200px 220px;
 }
 
 section.venue .schedule {
