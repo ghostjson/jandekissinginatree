@@ -712,7 +712,7 @@ section .accomodations{
 
 	position: relative;
   background: white;
-  margin-top: 200px;
+  margin: 200px 0px 0px;
 
 }
 
@@ -754,7 +754,6 @@ section.accomodations .accx1 .acc p, section.accomodations .accx2 .acc p {
 
 section.rsvp {
   margin: 100px auto;
-  margin-top: 0px;
 }
 
 section.rsvp .content {
